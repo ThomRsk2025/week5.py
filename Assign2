@@ -1,0 +1,40 @@
+Activity 2: Polymorphism Challenge! 🎭
+
+class Animal:
+    def move(self):
+        print("The animal moves in its own way.")
+
+class Dog(Animal):
+    def move(self):
+        print("The dog runs across the field, chasing a ball. 🐕💨")
+
+class Fish(Animal):
+    def move(self):
+        print("The fish swims gracefully through the coral reef. 🐟🌊")
+
+class Bird(Animal):
+    def move(self):
+        print("The bird flaps its wings and soars above the trees. 🐦🌳")
+
+class Vehicle:
+    def move(self):
+        print("The vehicle moves in its own way.")
+
+class Car(Vehicle):
+    def move(self):
+        print("The car speeds down the highway, tires humming. 🚗🛣️")
+
+class Plane(Vehicle):
+    def move(self):
+        print("The plane lifts off the runway and glides through the clouds. ✈️☁️")
+
+class Boat(Vehicle):
+    def move(self):
+        print("The boat cuts through the waves, leaving a foamy trail. 🚤🌊")
+
+# Create a list of mixed objects
+objects = [Dog(), Fish(), Bird(), Car(), Plane(), Boat()]
+
+# Simulate each object's movement
+for obj in objects:
+    obj.move()
